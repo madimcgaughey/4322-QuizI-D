@@ -25,7 +25,7 @@ employee_list = employee_dict['employee_file']
         #print(employee_dict)
 
 
-for employee in employee_list:
+for employee in employee_file:
   fn = employee['First Name']
   ln = employee['Last Name']
   salary = employee['Salary']
@@ -33,7 +33,8 @@ for employee in employee_list:
   if newsalary != 0:
     employee_dict['Name'] = fn, ln
     employee_dict['New Salary'] = newsalary
-    print(employee_dict)
+    print(f"Name: {fn}{ln}")
+    print(f"New Salary: {newsalary}")
 
 
 
