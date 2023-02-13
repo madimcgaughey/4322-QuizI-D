@@ -15,7 +15,7 @@ employee_file = open('employee_data.csv', 'r')
 
 #create an empty dictionary
 employee_dict = {}
-list1 = employee_dict['employee']
+employee_list = employee_dict['employee_file']
 
 
 #use a loop to iterate through the csv file
@@ -25,7 +25,7 @@ list1 = employee_dict['employee']
         #print(employee_dict)
 
 
-for employee in employee_file:
+for employee in employee_list:
   fn = employee['First Name']
   ln = employee['Last Name']
   salary = employee['Salary']
